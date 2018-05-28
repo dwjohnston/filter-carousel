@@ -12,7 +12,7 @@ class DisplayItem extends Component {
                 </div>
 
                 <div className ="location">
-                    <span className = "location-icon"> <i class="fas fa-map-marker"></i></span> 
+                    <span className = "location-icon"> <i className="fas fa-map-marker"></i></span> 
                     <span className =""> {item.location}</span>
                 </div>
             </div>

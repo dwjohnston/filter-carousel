@@ -1,15 +1,20 @@
-import { createSelector } from 'reselect'
-​
-const getSearchTerm = state => state.searchTerm
-const getItems = state => state.popularItems
-​
-export const getVisibleTodos = createSelector(
+import {createSelector} from 'reselect';
+
+
+const getItems = state => state.popularItems;
+
+const getSearchTerm = state => state.searchTerm;
+
+export const filterItemsByLocation = createSelector(
   [getSearchTerm, getItems],
-  (searchTerm, items) => {
+  (searchTerm, items) => { 
     
-    return items.filter((item) => {
+    if (!searchTerm) {
+      return items;
+    }
+
+    else return items.filter((item) => {
       return item.location.includes(searchTerm); 
     });
-
   }
 )
