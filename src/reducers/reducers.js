@@ -1,12 +1,10 @@
 import * as ActionTypes from "../actions/actionTypes";
-import { populateFeaturedItemsAction } from "../actions/actions";
 
 const initialState = {
     popularItems: [],
     featuredItems: [], 
     searchTerm: null, 
 }
-
 
 export default function reducers(state = initialState, action) {
 
@@ -19,8 +17,4 @@ export default function reducers(state = initialState, action) {
         return {...state, searchTerm: action.searchTerm}; 
         default: return {...state}; 
     }
-
-
-
-
 }
