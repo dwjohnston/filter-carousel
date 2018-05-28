@@ -9,7 +9,7 @@ class FeaturedItemsRender extends Component {
 
     return (
       <div className="FeaturedItems">
-        {items && items.map((v, i) => {
+        {items.map((v, i) => {
             return <DisplayItem item = {v} key = {i}/> ; 
         })}
       </div>

@@ -16,7 +16,7 @@ class PopularItemsRender extends Component {
     let settings = {
         arrows:true,
         dots: true,
-        infinite: (items && items.length>3) ,
+        infinite: (items.length>3) , //See this github issue: https://github.com/akiran/react-slick/issues/1171
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3, 
@@ -28,7 +28,7 @@ class PopularItemsRender extends Component {
 
       <div className="PopularItems">
         <Slider {...settings}> 
-            {items && items.map((v,i) => {
+            {items.map((v,i) => {
                 return <DisplayItem item = {v} key = {i}/>;
             })}
         </Slider> 

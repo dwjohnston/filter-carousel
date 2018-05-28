@@ -1,6 +1,5 @@
 html, body, #root {
   height: 100%; 
-
   background-color: #eee; 
 }
 
@@ -11,12 +10,10 @@ html, body, #root {
   align-items: center;
 }
 
-
 .App {
   max-width: 60em;
   display: flex; 
   flex-flow: column nowrap; 
-
   box-sizing: content-box;
 }
 
@@ -25,12 +22,11 @@ html, body, #root {
   border: solid 1px #999; 
   border-radius: 0.5em;
   margin: 2em  0;
-
   padding: 2em;
 }
 
 button.slick-arrow:before {
-  background-color: transparent !important;
+  background-color: transparent;
   color: black; 
 }
 

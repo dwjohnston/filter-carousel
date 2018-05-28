@@ -2,7 +2,7 @@ import * as ActionTypes from "../actions/actionTypes";
 import { populateFeaturedItemsAction } from "../actions/actions";
 
 const initialState = {
-    popularItesm: [],
+    popularItems: [],
     featuredItems: [], 
     searchTerm: null, 
 }
