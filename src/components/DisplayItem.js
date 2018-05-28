@@ -7,12 +7,13 @@ class DisplayItem extends Component {
 
         return (
             <div className="DisplayItem">
-                <div>
+                <div className ="img-container">
                     <img src = {item.img}/> 
                 </div>
 
-                <div>
-                    <i class="far fa-map-marker"></i> {item.location}
+                <div className ="location">
+                    <span className = "location-icon"> <i class="fas fa-map-marker"></i></span> 
+                    <span className =""> {item.location}</span>
                 </div>
             </div>
         );

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 import PopularItems from "./components/PopularItems"; 
-import FeaturedItems from "./components/FeaturedItems"; 
+import FeaturedItems from "./components/FeaturedItems";
+import SearchBar from "./components/SearchBar"; 
+
 import {fetchFeaturedItemsAction, fetchPopularItemsAction} from "./actions/actions"; 
 import { connect } from 'react-redux';
 
@@ -16,6 +18,8 @@ class AppRender extends Component {
   render() {
     return (
       <div className="App">
+
+        <SearchBar/> 
 
         <PopularItems/> 
 
